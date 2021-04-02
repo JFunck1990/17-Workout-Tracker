@@ -1,10 +1,12 @@
 const router = require("express").Router();
-const workout = require("../models/workout.js");
 
-router.post("/api/transaction", ({ body }, res) => {
-  Transaction.create(body)
-    .then(dbTransaction => {
-      res.json(dbTransaction);
+const Workout = require("../models/workout.js");
+
+router.post("/api/workouts", ( req , res) => {
+    Workout.create(body)
+    .then(dbWorkout => {
+
+      res.json(dbWorkout);
     })
     .catch(err => {
       res.status(400).json(err);
