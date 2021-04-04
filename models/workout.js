@@ -5,12 +5,20 @@ const Schema = mongoos.Schema;
 const workoutSchema = new Schema({
     exercises: [
     {
+        day: {
+            type: Date,
+            default: () => new Date()
+        },
         type: {
-            type: String
+            type: String,
+            trim: true,
+            required: "Cardio or Resistance"
         },
 
         name: {
-            type: String
+            type: String,
+            trim: true,
+            required: "Name of the exersice"
         },
 
         duration: {
@@ -24,7 +32,7 @@ const workoutSchema = new Schema({
         reps: {
             type: Number
         },
-        
+
         sets: {
             type: Number
         }
