@@ -22,7 +22,7 @@ router.post("/api/workouts",function (req,res){
 });
 
 router.get("/api/workouts/range",function(req,res){
-    Workout.find()
+    Workout.find({})
     .then(data =>{
         res.json(data)
     })
@@ -40,11 +40,12 @@ router.post("/api/workouts/range",function (req,res){
     })
 });
 
-router.put("/api/workouts/:id",({body,params},res)=>{
+router.put("/api/workouts/:id", ( req ,res) => {
     Workout.findById(
-     params.id,
-     {$push:{exercises:body} },
-     {new: true,runValidators:true }
+        { _id: req.params.id },
+        {
+          $push: { exercises: req.body }
+        }
     )
     .then(data => res.json(data))
     .catch(err => {
