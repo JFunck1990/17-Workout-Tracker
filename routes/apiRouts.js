@@ -40,6 +40,17 @@ router.post("/api/workouts/range",function (req,res){
     })
 });
 
+router.put("/api/workouts/:id",({body,params},res)=>{
+    Workout.findById(
+     params.id,
+     {$push:{exercises:body} },
+     {new: true,runValidators:true }
+    )
+    .then(data => res.json(data))
+    .catch(err => {
+        res.json(err)
+    })
+});
 
 
 module.exports = router;
