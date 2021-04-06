@@ -13,7 +13,7 @@ by: Jack Funck
 
 <a name="link"></a>
 ## Link
-give it a try: <a href="https://fitnesscoolness.herokuapp.com/?id=606b87db9a6228001595c2e2" target="_blank"></a>
+give it a try: <a href="https://fitnesscoolness.herokuapp.com/?id=606b87db9a6228001595c2e2" target="_blank"> Workout Tracker</a>
 
 <a name="desc"></a>
 ## Description
