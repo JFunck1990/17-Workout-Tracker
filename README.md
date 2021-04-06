@@ -60,3 +60,11 @@ nodemon server.js
 # Screen Shots
 ### Home
 <img src="assets/img/dash.png">
+
+### Stats Page
+<img src="assets/img/stats.png">
+
+
+### exercise Page
+<img src="assets/img/exercise.png">
+
