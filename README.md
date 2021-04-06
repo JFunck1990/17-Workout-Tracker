@@ -52,7 +52,7 @@ nodemon server.js
 # Video of how it works.
 > If you click GIF you will be navigated to YouTube for a full-video.
 
-[![Note Taker](https://media.giphy.com/media/VizPEjiPYmJUnuZfUh/giphy.gif)](https://youtu.be/Rxt_xdiYwHM)
+[![Fitness Tracker](https://media.giphy.com/media/dLteGUxUgZofTWWIMc/giphy.gif)](https://youtu.be/4Cjq_JS5bZc)
 
 
 
